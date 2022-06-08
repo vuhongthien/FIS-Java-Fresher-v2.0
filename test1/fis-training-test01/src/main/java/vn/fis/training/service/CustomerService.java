@@ -61,8 +61,9 @@ public interface CustomerService {
 
     /**
      * Ham thu hien tim kiem tat ca danh sach customer trong he thong. Tong hop theo do tuoi cua khach hang
+     *
      * @return : Danh sach doi tuong SummaryCustomerByAgeDTO duoc sap xep theo thu tu Age GIAM DAM. Neu khong co khach hang nao tra ve EmptyList
      */
-    List<SummaryCustomerByAgeDTO> summaryCustomerByAgeOrderByAgeDesc();
+    List<Customer> summaryCustomerByAgeOrderByAgeDesc();
 
 }

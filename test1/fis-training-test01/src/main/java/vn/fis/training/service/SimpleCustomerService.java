@@ -7,7 +7,6 @@ import vn.fis.training.exception.InvalidCustomerException;
 import vn.fis.training.exception.InvalidCustomerStatusException;
 import vn.fis.training.store.InMemoryCustomerStore;
 
-import java.io.IOException;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -111,10 +110,10 @@ public class SimpleCustomerService implements CustomerService{
     }
 
     @Override
-    public List<SummaryCustomerByAgeDTO> summaryCustomerByAgeOrderByAgeDesc() {
+    public List<Customer> summaryCustomerByAgeOrderByAgeDesc() {
         //TODO: Implement method tho dung dac ta cua CustomerService interface
         return customerStore.findAll().stream()
-                .sorted(Comparator.comparing(SummaryCustomerByAgeDTO::getAge).reversed())
+                .sorted(Comparator.comparing(Customer::getBirthDay).reversed())
                 .collect(Collectors.toList());
     }
 
