@@ -1,0 +1,61 @@
+
+-- detective ( 5 )
+INSERT INTO tbl_detective values(1, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', '', 'PRO1', 'Pham', '2022-09-22 00:00:00.000000', 'Long', '123', 'TRAINEE', 'ACTIVE', 'longp1');
+INSERT INTO tbl_detective values(2, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', '', 'PRO1', 'Pham', '2022-09-22 00:00:00.000000', 'Minh', '123', 'JUNIOR', 'SUSPENDED', 'minhp1');
+INSERT INTO tbl_detective values(3, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', '', 'PRO1', 'Pham', '2022-09-22 00:00:00.000000', 'Hoang', '123', 'SENIOR', 'VACATION', 'hoangp1');
+INSERT INTO tbl_detective values(4, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', '', 'PRO1', 'Pham', NULL, 'Nguyen', '123', 'INSPECTOR', 'UNDER_INVESTIGATION', 'nguyenp1');
+INSERT INTO tbl_detective values(5, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', '', 'PRO1', 'Pham', NULL, 'Thai', '123', 'CHIEF_INSPECTOR', 'RETIRED', 'thaip1');
+
+
+-- criminal case ( 6 )
+INSERT INTO `tbl_criminal` VALUES ('1', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'criminal case 1', 'notes 1', 'number1', 'short1', 'SUBMITTED', 'UNCATEGORIZED', '1');
+INSERT INTO `tbl_criminal` VALUES ('2', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'criminal case 2', 'notes 2', 'number2', 'short2', 'UNDER_INVESTIGATION', 'UNCATEGORIZED', '1');
+INSERT INTO `tbl_criminal` VALUES ('3', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'criminal case 3', 'notes 3', 'number3', 'short3', 'IN_COURT', 'INFRACTION', '1');
+INSERT INTO `tbl_criminal` VALUES ('4', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'criminal case 4', 'notes 4', 'number4', 'short4', 'CLOSED', 'MISDEMEANOR', '1');
+INSERT INTO `tbl_criminal` VALUES ('5', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'criminal case 5', 'notes 5', 'number5', 'short5', 'DISMISSED', 'FELONY', '1');
+INSERT INTO `tbl_criminal` VALUES ('6', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'criminal case 6', 'notes 6', 'number6', 'short6', 'COLD', 'FELONY', '1');
+
+-- criminal and detective ( 9 )
+INSERT INTO `tbl_criminal_detective` VALUES ('1', '1', '2');
+INSERT INTO `tbl_criminal_detective` VALUES ('2', '1', '3');
+INSERT INTO `tbl_criminal_detective` VALUES ('3', '1', '4');
+INSERT INTO `tbl_criminal_detective` VALUES ('4', '2', '2');
+INSERT INTO `tbl_criminal_detective` VALUES ('5', '3', '3');
+INSERT INTO `tbl_criminal_detective` VALUES ('6', '4', '4');
+INSERT INTO `tbl_criminal_detective` VALUES ('7', '5', '4');
+INSERT INTO `tbl_criminal_detective` VALUES ('8', '5', '5');
+INSERT INTO `tbl_criminal_detective` VALUES ('9', '6', '5');
+
+-- storage
+INSERT INTO `tbl_storage` VALUES ('1', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'HCM-location', 'HCMname');
+INSERT INTO `tbl_storage` VALUES ('2', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'HN-location', 'HNname');
+INSERT INTO `tbl_storage` VALUES ('3', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'DaNang-location', 'DNname');
+INSERT INTO `tbl_storage` VALUES ('4', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'Q7-location', 'Q7name');
+
+-- evidence ( 8 )
+INSERT INTO `tbl_evidence` VALUES ('1', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '1', '1', 'evi1', 'note-evi1', 'num-evi1');
+INSERT INTO `tbl_evidence` VALUES ('2', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '1', '1', 'evi2', 'note-evi2', 'num-evi2');
+INSERT INTO `tbl_evidence` VALUES ('3', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '2', '3', 'evi3', 'note-evi3', 'num-evi3');
+INSERT INTO `tbl_evidence` VALUES ('4', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '3', '4', 'evi4', 'note-evi4', 'num-evi4');
+INSERT INTO `tbl_evidence` VALUES ('5', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '4', '4', 'evi5', 'note-evi5', 'num-evi5');
+INSERT INTO `tbl_evidence` VALUES ('6', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '5', '2', 'evi6', 'note-evi6', 'num-evi6');
+INSERT INTO `tbl_evidence` VALUES ('7', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '5', '2', 'evi7', 'note-evi7', 'num-evi7');
+INSERT INTO `tbl_evidence` VALUES ('8', '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', NULL, '6', '1', 'evi8', 'note-evi8', 'num-evi8');
+
+
+-- trackEntry
+-- note:     trackEntry 1.N - 1 evidence   and   evidence 1.N - 1 criminal   and     criminal N-N detective
+INSERT INTO `tbl_trackentry` VALUES (1, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'SUBMITTED', '2022-09-22 00:00:00.000000', '2', '1', 'reson-evi1-cri1-det2');
+INSERT INTO `tbl_trackentry` VALUES (2, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'SUBMITTED', '2022-09-22 00:00:00.000000', '3', '1', 'reson-evi1-cri1-det3');
+INSERT INTO `tbl_trackentry` VALUES (3, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'RETRIEVED', '2022-09-22 00:00:00.000000', '4', '1', 'reson-evi1-cri1-det4.1');
+INSERT INTO `tbl_trackentry` VALUES (4, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'SUBMITTED', '2022-09-22 00:00:00.000000', '4', '1', 'reson-evi1-cri1-det4.2');
+
+INSERT INTO `tbl_trackentry` VALUES (5, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'RETRIEVED', '2022-09-22 00:00:00.000000', '2', '2', 'reson-evi2-cri1-det2');
+INSERT INTO `tbl_trackentry` VALUES (6, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'SUBMITTED', '2022-09-22 00:00:00.000000', '3', '2', 'reson-evi2-cri1-det3');
+-- lost one detective
+
+INSERT INTO `tbl_trackentry` VALUES (7, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'RETURNED', '2022-09-22 00:00:00.000000', '2', '3', 'reson-evi3-cri2-det2.1');
+INSERT INTO `tbl_trackentry` VALUES (8, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'SUBMITTED', '2022-09-22 00:00:00.000000', '2', '3', 'reson-evi3-cri2-det2.2');
+
+
+
