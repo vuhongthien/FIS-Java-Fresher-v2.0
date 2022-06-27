@@ -52,6 +52,7 @@ INSERT INTO `tbl_trackentry` VALUES (4, '2022-09-22 00:00:00.000000', '2022-09-2
 
 INSERT INTO `tbl_trackentry` VALUES (5, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'RETRIEVED', '2022-09-22 00:00:00.000000', '2', '2', 'reson-evi2-cri1-det2');
 INSERT INTO `tbl_trackentry` VALUES (6, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'SUBMITTED', '2022-09-22 00:00:00.000000', '3', '2', 'reson-evi2-cri1-det3');
+
 -- lost one detective
 
 INSERT INTO `tbl_trackentry` VALUES (7, '2022-09-22 00:00:00.000000', '2022-09-22 00:00:00.000000', '1', 'RETURNED', '2022-09-22 00:00:00.000000', '2', '3', 'reson-evi3-cri2-det2.1');
